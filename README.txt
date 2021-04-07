@@ -1,5 +1,4 @@
 # Midterm1
-# hw2
 
 在function.h裏面，我放了三個function。分別是uLCD的界面程式ulcd_display(int i)，產生三角波的wave(int i)和取樣的sampling().
 
