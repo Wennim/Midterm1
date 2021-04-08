@@ -120,14 +120,26 @@ else if(i==4){
 }
 }
 
-void wave(int j){
+void wave(float j){
 
 while (1)
 {
-    for (float i = 0.93f; i >= 0.00; i -= j*0.0096f) {
+    for (float i = 0.00f; i <= 0.96; i += 0.012f/j) {
             aout = i;
             
-        ThisThread::sleep_for(10ms);
+        ThisThread::sleep_for(1ms);
+            }
+
+           for (float i = 0.00f; i <=0.24f-j*0.16f; i += 0.001f) {
+            aout = aout;
+            
+        ThisThread::sleep_for(1ms);
+            }
+
+        for (float i = 0.96f; i >= 0.00; i -= 0.012f/j) {
+            aout = i;
+            
+        ThisThread::sleep_for(1ms);
             }
 
 }
