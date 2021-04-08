@@ -10,7 +10,7 @@ Thread thread;
 
 int main()
  {
-     int j;
+     float j;
     int select=1;
    // Optional: set mode as PullUp/PullDown/PullNone/OpenDrain
    mypin_down.mode(PullNone);
@@ -34,16 +34,16 @@ int main()
             }
 
             else if(select==2){
-                j=2;
+                j=0.5;
                 break;
             }
 
             else if(select==3){
-                j=10;
+                j=0.25;
                 break;
             }    
             else if(select==4){
-                j=20;
+                j=0.125;
                 break;
             }
         }
